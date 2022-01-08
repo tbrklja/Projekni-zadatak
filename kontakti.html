@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="style.css">
+		<!-- End CSS -->
+		<!-- meta elements -->
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="description" content="some description">
+        <meta name="keywords" content="keyword 1, keyword 2, keyword 3, keyword 4, ...">
+		
+		<!-- Schema.org markup for Google+ -->
+		<meta itemprop="name" content="Hello Example">
+		<meta itemprop="description" content="Some description">
+		<meta itemprop="image" content="Your URL"> 
+		
+		<!-- Open Graph data -->
+		<meta property="og:title" content="Hello Example">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="Your URL">
+		<meta property="og:image" content="Your URL">
+		<meta property="og:description" content="Some description">
+		<meta property="article:tag" content="keyword 1, keyword 2, keyword 3, keyword 4, ...">
+		
+		<!-- Twitter Card data -->
+		<meta name="twitter:title" content="Hello Example">
+		<meta name="twitter:description" content="Some description">
+		
+        <meta name="author" content="tbrklja@vvg.hr">
+		<!-- favicon meta -->
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+		<!-- end favicon meta -->
+		<!-- end meta elements -->
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+		<!-- End Google Fonts -->
+		<title>Kontakti</title>
+	</head>
+<body>
+	<header>
+		<div class="hero-image" style="height: 200px;"></div>
+		<nav>
+			<ul>
+			  <li><a href="index.html">Početna stranica</a></li>
+			  <li><a href="novosti.html">Novosti</a></li>
+			  <li><a href="kontakti.html">Kontakti</a></li>
+			  <li><a href="o-skijanju.html">O skijanju</a></li>
+			  <li><a href="galerija.html">Galerija</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Kontakti</h1>
+		<div id="kontakti">
+			<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Karla%20Metiko%C5%A1a%209,%20Zagreb&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123 movies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+			<form action="http://work2.eburza.hr/pwa/responzive-page/send-contact.php" id="contact_form" name="contact_form" method="POST">
+				<label for="fname">Ime *</label>
+				<input type="text" id="fname" name="ime" placeholder="Tvoje ime.." required>
+
+				<label for="lname">Prezime *</label>
+				<input type="text" id="lname" name="prezime" placeholder="Tvoje prezime.." required>
+				
+				<label for="lname">Tvoj E-mail *</label>
+				<input type="email" id="email" name="email" placeholder="Tvoj e-mail.." required>
+
+				<label for="country">Zemlja</label>
+				<select id="country" name="country">
+				  <option value="">Please select</option>
+				  <option value="BE">Belgium</option>
+				  <option value="HR" selected>Croatia</option>
+				  <option value="LU">Luxembourg</option>
+				  <option value="HU">Hungary</option>
+				</select>
+
+				<label for="subject">Tekst</label>
+				<textarea id="subject" name="subject" placeholder="Poruka.." style="height:200px"></textarea>
+
+				<input type="submit" value="Predaj">
+			</form>
+		</div>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2022 Tomislav Brkljačić</p>
+	</footer>
+</body>
+</html>
